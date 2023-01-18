@@ -2,6 +2,8 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(document).ready(function() {
+  var dayJsObject = dayjs();
+  console.log(dayJsObject.format("M/D/YYYY h:mm A"));
 
   var inpKey = document.getElementById("inpKey");
   var inpValue = document.getElementById("inpValue");
@@ -40,7 +42,7 @@ $(document).ready(function() {
   // probably will need to use event delegation in the statement
   if (  $(".present").css('background-color', 'red')){
   } else if( $(".futre").css('background-color', 'green')) {
-  } else ( $(".past").css('background-color', 'grey'));
+  } else ( $(".past").css('background-color', 'grey')) ;
   
   
     // TODO: Add code to apply the past, present, or future class to each time
