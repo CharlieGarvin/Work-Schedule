@@ -3,13 +3,13 @@
 // in the html.
 $(document).ready(function() {
   var dayJsObject = dayjs();
-  console.log(dayJsObject.format("M/D/YYYY h:mm A"));
+  // console.log(dayJsObject.format("M/D/YYYY h:mm A"));
 
   var inpKey = document.getElementById("inpKey");
   var inpValue = document.getElementById("inpValue");
   var btnInsert = document.getElementById("btnInsert");
   var lsOutput = document.querySelectorAll("lsOutput");
-  var dateDisplay = document.getElementById("currentDay");
+  // var dateDisplay = document.getElementById("currentDay");
 
   $(function () {
     $(btnInsert).click(function(){
@@ -59,7 +59,7 @@ $(document).ready(function() {
     //
   
     // TODO: Add code to display the current date in the header of the page.
-    dateDisplay.innerHTML.dayJsObject.format('M/D/YYYY');
+    document.getElementById('currentDay').innerHTML = dayJsObject.format('M/D/YYYY');
   });
 }
 
